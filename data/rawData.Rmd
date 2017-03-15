@@ -1,0 +1,1 @@
+Original data can be download <a href="https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip" target="_blank">here</a>. For more information about HC Corpora go to <a href="http://www.corpora.heliohost.org/aboutcorpus.html" target="_blank">this webpage</a>.
