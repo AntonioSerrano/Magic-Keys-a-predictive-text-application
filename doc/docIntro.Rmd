@@ -1,0 +1,23 @@
+## Magic Keys
+### A text predictive application
+#### By Antonio Serrano, November 2016
+
+ 
+
+This application was programmed to complete the <a href="https://www.coursera.org/learn/data-science-project" target="_blank">Capstone Project</a> in the <a href="https://www.coursera.org/specializations/jhu-data-science" target="_blank">Data Science Specialization</a> offered by <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a> through <a href="https://www.coursera.org/" target="_blank">Coursera</a> in collaboration with <a href="https://swiftkey.com/en" target="_blank">Swiftkey</a>. In the mentioned project students must apply data science techniques in the area of <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">Natural Language Processing (NPL)</a> by building a predictive text application. The application is to be capable of scanning a stream of text as it is typed by a user and suggest possibilities for the next word to be appended to the input stream. The application have to be programmed with the Shiny package in R language.
+
+In summary, these are the steps that were taken to build the current application:
+
+1. Read and generate sample data
+
+2. Apply text transformations and generate unigram
+
+3. Treat unknown words
+
+4. Generate the rest of n-grams
+
+5. Build predictive algorithm
+
+6. Model performance analysis
+
+For more information about these steps, click on the subsequent tabs in this section.

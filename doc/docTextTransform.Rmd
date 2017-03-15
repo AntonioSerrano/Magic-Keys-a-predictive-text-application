@@ -1,0 +1,19 @@
+ 
+
+I used the **"tm"** package as a framework for text mining applications within R. For more information about how to use it, you can read <a href="https://www.jstatsoft.org/index.php/jss/article/view/v025i05/v25i05.pdf" target="_blank">the paper from JSS</a>. Be careful, that article is from 2008 and the package and its commands have changed since then. For a quick guide with updated functions go <a href="ftp://cran.r-project.org/pub/R/web/packages/tm/vignettes/tm.pdf" target="_blank">here</a>.
+
+Moreover, I do not recommend to use "quanteda" for text mining operations. It is true that quanteda is faster than tm in calculations, but the former cannot be used to apply transformations before the tokenization stage. This means that quanteda cannot be used to treat the unknown words problem in text prediction (or at least I did not find a way to do it).
+
+Furthermore, I combined basic transformation included in "tm" plus some others from the **"qdapRegex"** package in order to avoid programming annoying regular expressions. In total I made the following transformations:
++ tolower
++ removeNumbers
++ removePunctuation
++ stripWhitespace
++ rm_white_lead_trail
++ rm_hash
++ rm_tag
++ rm_twitter_url
++ rm_url
++ rm_emoticon
+
+Note that, since the goal is to create a text prediction application, it does not make any sense to apply transformation such as stemming-What is the point of using words stem to predict the next word of a phrase?-and stopwords-precisely, the goal of the app is to predict the more common and probable words in English.

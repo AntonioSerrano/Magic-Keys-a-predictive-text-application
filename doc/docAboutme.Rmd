@@ -1,0 +1,24 @@
+ 
+
+<img style="float: right; margin-left: 20px; margin-right: 20px; margin-top: 5px; margin-bottom: 5px" src="profile2.jpg" alt="Me and my girlfriend enjoying tapas :)">
+
+Hi! My name is Antonio Serrano and I work as a professional data analyst in the private sector in Murcia, Spain. My current interests in the field include things like:
++ Learning machine
++ Optimization
++ Clasification analysis
++ Big Data
++ Artificial intelligence
++ Neuronal networks
++ Bayesian statistics
++ R and Python programming, of course ;)
+
+In fact, I have two great passions in my life. The first one is spending time with my marvelous girlfriend. The second one is my PhD. In particular, I am doing my industrial PhD in this enthralling world of data science at <a href="http://international.ucam.edu/" target="_blank">UCAM university</a>.
+
+Beyond that, I am passionate about
++ Computers
++ Tech news
++ Video games
++ Sci-fi movies
++ Tenis
++ Jogging
++ Tapas!!

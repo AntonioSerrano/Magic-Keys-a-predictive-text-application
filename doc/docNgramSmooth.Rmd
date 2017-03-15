@@ -1,0 +1,13 @@
+ 
+
+**N-gram model**
+
+As explained in <a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf" target="_blank">Jurafsky & Martin (2015, Chapter 4, p. 1-2</a>, n-gram probabilistic language models (or N-gram models, for short) allow for the assignment of probabilities to sequences of words. An N-gram is simply a sequence of words of length N. Using N-gram models, we can to estimate the probability of the last word of an N-gram given the previous words. This makes N-gram models an ideal tool for generating and ranking next-word predictions, as is the intent of our Shiny application.
+
+ 
+
+**Smoothing technique**
+
+To keep the language model from assigning zero probability to the unseen events-i.e. unknown words-, we have to shaved off a bit of probability mass from some more frequent words and gave it to those never seen. This smoothing modification is called smoothing or discounting. There are several options like add-1 smoothing, add-k smoothing, Katz backoff, Kneser-Ney smoothing, etc.
+
+Specifically, I chose the **stupid backoff smoothing**. With very large training sets, it performs at the same level than other more refined techniques like Kneser-Ney or Katz backoff (<a href="http://www.aclweb.org/anthology/D07-1090.pdf" target="_blank">Brants et al. (2007)</a>). "Stupid backoff gives up the idea of trying to make the language model a true probability distribution. There is no discounting of the higher-order probabilities. If a higher-order N-gram has a zero count, we simply backoff to a lower order N-gram, weighed by a fixed (context-independent) weight" <a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf" target="_blank">Jurafsky & Martin (2015, Chapter 4, p. 20)</a>. In other words, stupid backoff find if n-gram has been seen, if not, multiply by a penalty rate (called alpha or lambda) and back off to lower gram model. There is an interesting enlightening example of how this type of algorithm works in <a href="https://rpubs.com/pferriere/dscapreport" target="_blank">Ferriere's report</a>, in the "Ranking Next-Word Candidates" section. I set **an alpha value equal to 0.4** following <a href="http://www.aclweb.org/anthology/D07-1090.pdf" target="_blank">Brants et al. (2007)</a>.

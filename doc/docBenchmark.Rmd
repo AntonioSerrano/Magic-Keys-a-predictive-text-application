@@ -1,0 +1,41 @@
+ 
+
+A next word prediction benchmark was developed by alumni. Its script "benchmark.R" can be download from <a href="https://github.com/hfoffani/dsci-benchmark" target="_blank">here</a> (password for data zip file: capstone4). It uses a sample of blog entries and tweets as its test dataset. Sliding a fixed-size word window over a test sentence in its dataset, benchmark.R calls our prediction function to guess the word that follows that window. After the window has slided over the entire sentence, it moves on to the next sentence in its dataset.
+
+In my case, the benchmark was run over 599 blog sentences and 793 tweets, for a total of 28,445 predictions for each scoring technique. The tool measures top-1 precision (the number of times our top prediction correctly matched the word following its test window) and top-3 precision (the number of times one of our top-3 predictions matched the word following its test window). Here are the results obtained with Stupid Backoff:
+
+```{r}
+
+# Overall top-3 score:     14.38 %
+# Overall top-1 precision: 10.48 %
+# Overall top-3 precision: 17.60 %
+# Average runtime:         27.65 msec
+# Number of predictions:   28464
+# Total memory used:       53.99 MB
+
+# Dataset details
+#  Dataset "blogs" (599 lines, 14587 words, hash 14b3c593e543eb8b2932cf00b646ed653e336897a03c82098b725e6e1f9b7aa2)
+#   Score: 14.09 %, Top-1 precision: 10.26 %, Top-3 precision: 17.28 %
+#  Dataset "tweets" (793 lines, 14071 words, hash 7fa3bf921c393fe7009bc60971b2bb8396414e7602bb4f409bed78c7192c30f4)
+#   Score: 14.67 %, Top-1 precision: 10.70 %, Top-3 precision: 17.92 %
+
+```
+
+And below are the results obtained with my own testing data set:
+
+```{r}
+
+# Overall top-3 score:     16.11 %
+# Overall top-1 precision: 12.01 %
+# Overall top-3 precision: 19.63 %
+# Average runtime:         27.74 msec
+# Number of predictions:   17471
+# Total memory used:       54.12 MB
+
+# Dataset details
+# Dataset "testingSample" (700 lines, 17514 words, hash fa504de72f5ac78745760703d11fd8823edd36a103fd0cda8827d14406931616)
+# Score: 16.11 %, Top-1 precision: 12.01 %, Top-3 precision: 19.63 %
+
+```
+
+As I have seen in other solutions from classmates and alumni, these results are average regarding the overall top-3 precision, overall top-1 precision, and overall top-3 precision respectively. For future research, I would like to improve my model exploring other smoothing techniques like Kneser-Ney and Katz backoff.

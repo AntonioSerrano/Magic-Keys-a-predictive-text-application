@@ -1,0 +1,25 @@
+ 
+
+Original data can be download <a href="https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip" target="_blank">here</a>. For more information about HC Corpora go to <a href="http://www.corpora.heliohost.org/aboutcorpus.html" target="_blank">this webpage</a>.
+
+Only text files in English are taken into account for this application. Some of their most important characteristics are these:
+
+|Files name                    |Files size                |No. of lines            |Words count |
+|:-----------------------------|:-------------------------|:-----------------------|:----------|
+|en_US.blogs.txt               |248.5 Mb                  |899,288                 |37,570,839 |
+|en_US.news.txt                |249.6 Mb                  |1,010,242               |34,494,539 |
+|en_US.twitter.txt             |301.4 Mb                  |2,360,148               |30,451,170 |
+
+ 
+
+Considering the size of the three text files (583 Mb in total) and my computer limitations, I estimated that **a sample of 2%** should be sufficient for the goal of creating a predictive text app with an acceptable rate of success. I flipped a coin to randomly read 2% of the total lines in files. The result is the following:
+
+|Files name                    |Files size                |No. of lines            |Words count |
+|:-----------------------------|:-------------------------|:-----------------------|:----------|
+|blogSample.txt                |4.9 Mb                    |18,008                  |746,478    |
+|newsSample.txt                |5 Mb                      |20,241                  |683,148    |
+|twitterSample.txt             |6.1 Mb                    |47,327                  |607,232    |
+
+ 
+
+Finally, following <a href="https://www.google.es/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjZpNbpgpTQAhWMWRQKHS2KCMIQFggkMAA&url=https%3A%2F%2Fweb.stanford.edu%2F~jurafsky%2Fslp3%2F4.pdf&usg=AFQjCNGoZ4M7cc5cawjYsbc-v-PwXtpxdg" target="_blank">Jurafsky & Martin (2015, Chapter 4, p. 8</a>, I splitted the sample data into **training (80%), validation (10%), and testing (10%) sets**.

@@ -1,0 +1,23 @@
+ 
+
+**Academic papers and books**
+
++ <a href="http://www.aclweb.org/anthology/D07-1090.pdf" target="_blank">Brants, T., Popat, A. C., Xu, P., Och, F. J., & Dean, J. (2007). Large language models in machine translation. In Proceedings of the Joint Conference on Empirical Methods in Natural Language Processing and Computational Natural Language Learning.</a>
+
++ <a href="https://www.jstatsoft.org/index.php/jss/article/view/v025i05/v25i05.pdf" target="_blank">Feinerer, I., Hornik, K., & Meyer, D. (2008). Text mining infrastructure in R. Journal of statistical software, 25(5), 1-54.</a>
+
++ <a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf" target="_blank">Jurafsky, D., & Martin, J. H. (2014). Speech and language processing. Chapter 4. Draft of January 9, 2015.</a>
+
+ 
+
+**Other resoruces**
+
+* <a href="https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip" target="_blank">Original data set from HC Corpora</a>
+
+* <a href="http://www.corpora.heliohost.org/aboutcorpus.html" target="_blank">Information about HC Corpora</a>
+    
+* <a href="ftp://cran.r-project.org/pub/R/web/packages/tm/vignettes/tm.pdf" target="_blank">Updated introduction to the tm Package Text Mining in R</a>
+
+* <a href="https://www.cs.cmu.edu/~biglou/resources/bad-words.txt" target="_blank">Profanity list with more than 1,300 offensive words in English</a>
+
+* <a href="https://github.com/hfoffani/dsci-benchmark" target="_blank">Next word prediction benchmark</a>

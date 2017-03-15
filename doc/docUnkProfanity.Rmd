@@ -1,0 +1,11 @@
+ 
+
+**Unknown words**
+
+One of the common problems when designing a text prediction application is what to do if the user enters an input word that it is not included in the training set. In such situations, we have to assign to these unknown words some probability somehow. To tackle this issue, I turned it back into a **closed vocabulary problem**, following <a href="https://web.stanford.edu/~jurafsky/slp3/4.pdf" target="_blank">Jurafsky & Martin (2015, Chapter 4, p. 12)</a>. In particular, **I considered as rare words those with frequency less than 3** and replaced them by the term "UNK".
+
+ 
+
+**Profanity**
+
+A profanity list with more than 1,300 bad words was obtained from this <a href="https://www.cs.cmu.edu/~biglou/resources/bad-words.txt" target="_blank">website</a>. It was taken into account when building the predictive algorithm, just at the end.
