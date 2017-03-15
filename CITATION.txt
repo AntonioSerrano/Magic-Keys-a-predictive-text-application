@@ -1,0 +1,3 @@
+Please, cite this work as:
+
+Serrano, A. (2016). "Magic Keys: a web predictive text application". Available at https://antonioserrano.shinyapps.io/Magic_Keys_a_Coursera_Data_Science_Capstone_Project/.
