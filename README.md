@@ -21,7 +21,7 @@ Magic Keys is a predictive text application developed to complete the Capstone P
     `suppressWarnings(install.packages("textreg"))`
     6. parallel: for parallel computation.  
     `suppressWarnings(install.packages("parallel"))`
-    7. RWeka: to tokenize words from text.
+    7. RWeka: to tokenize words from text.  
     `suppressWarnings(install.packages("RWeka"))`
     8. stringr: to split columns from matrix as part of the process to make ngrams.  
     `suppressWarnings(install.packages("stringr"))`
@@ -36,10 +36,10 @@ Magic Keys is a predictive text application developed to complete the Capstone P
 
 2. About RWeka and Mac OS:
 There seem to be a little problem between RWeka and Java on Mac OS. To solve it try this:
-    1. On your terminal:
+    1. On your terminal:  
     `sudo R CMD javareconf`
-    2. On R:
+    2. On R:  
     `install.packages("rJava",type='source')`
-    3. On terminal:
+    3. On terminal:  
     `sudo ln -f -s $(/usr/libexec/java_home)/jre/lib/server/libjvm.dylib /usr/local/li`
     
