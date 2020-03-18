@@ -44,4 +44,4 @@
     
 ## Future work ##
 
-There is still much work to be done in relation to the n-gram model. Firs of all, the corpus should be augmented with more texts from areas beyond news. Second, state-of-the-art models are nowadays based on (Deep Learning)[https://ieeexplore.ieee.org/abstract/document/6472238] (DL). It is worth to explore such DL models.
+There is still much work to be done in relation to the n-gram model. Firs of all, the corpus should be augmented with more texts from areas beyond news. Second, state-of-the-art models are nowadays based on (Deep Learning)[https://ieeexplore.ieee.org/abstract/document/6472238]. It is worth to explore such DL models.
