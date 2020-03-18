@@ -1,6 +1,6 @@
 # Magic Keys #
 
-Magic Keys is a predictive text application developed to complete the Capstone Project in the Data Science Specialization offered by Johns Hopkins University in collaboration with Swiftkey via Coursera.org.
+[Magic Keys](https://antonioserrano.shinyapps.io/Magic_Keys_a_Coursera_Data_Science_Capstone_Project/) is a simple predictive text application that works pretty much like a cell phone's keyboard, making suggestion about the next word to be entered when writing an email or replaying a message. It is written in R and its [Shiny package](https://shiny.rstudio.com/) in order to build the interactive web application. This project was developed to complete the Capstone Project from the [Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) at Coursera. To see more details about the n-gram model employed, you can have a look to [this short presentation](file:///private/var/folders/47/dn900pp90ls_9k8zfllq9f500000gp/T/RtmpXRUFdD/view338145b19957.dir/presentation.html#/).
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/AntonioSerrano/Magic-Keys-a-predictive-text-application/blob/master/LICENSE.txt)
 
@@ -34,8 +34,7 @@ Magic Keys is a predictive text application developed to complete the Capstone P
     12. DT: to display R dataframes as tables on HTML pages.  
     `suppressWarnings(install.packages("DT"))`
 
-2. About RWeka and Mac OS:
-There seem to be a little problem between RWeka and Java on Mac OS. To solve it try this:
+2. About RWeka and Mac OS. There seem to be a little problem between RWeka and Java on Mac OS. To solve it try this:
     1. On your terminal:  
     `sudo R CMD javareconf`
     2. On R:  
@@ -43,3 +42,6 @@ There seem to be a little problem between RWeka and Java on Mac OS. To solve it 
     3. On terminal:  
     `sudo ln -f -s $(/usr/libexec/java_home)/jre/lib/server/libjvm.dylib /usr/local/li`
     
+## Future work ##
+
+There is still much work to be done in relation to the n-gram model. Firs of all, the corpus should be augmented with more texts from areas beyond news. Second, state-of-the-art models are nowadays based on (Deep Learning)[https://ieeexplore.ieee.org/abstract/document/6472238] (DL). It is worth to explore such DL models.
