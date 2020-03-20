@@ -6,7 +6,7 @@
 
 ----
     
-## Getting Started ##
+## Dependencies ##
 
 1. Install the dependencies for R:
     1. utils: to unzip files  
